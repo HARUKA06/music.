@@ -1,28 +1,35 @@
 services:
-  - type: web
-    name: Haruka-music-bot
-    env: python
-    plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python main.py"
+  - type: worker
+    name: DeadlineTech
+    runtime: python-3.11.4
+    buildCommand: pip install --no-cache-dir -r requirements.txt
+    startCommand: bash start
     envVars:
-      - key: API_HASH
-        sync: false
       - key: API_ID
-        sync: false
-      - key: API_URL
-        sync: false
-      - key: ASSISTANT_SESSION
-        sync: false
+        value: "20071630"
+      - key: API_HASH
+        value: "11d0d49035cfa33964c687e4480fef0d"
       - key: BOT_TOKEN
-        sync: false
-      - key: DOWNLOAD_API_URL
-        sync: false
+        value: ""
+      - key: MONGO_DB_URI
+        value: "mongodb+srv://pusers:nycreation@nycreation.pd4klp1.mongodb.net/?retryWrites=true&w=majority&appName=NYCREATION"
       - key: OWNER_ID
-        sync: false
-      - key: MongoDB_url
-        sync: false
-      - key: ASSISTANT_USERNAME
-        sync: true
-      - key: ASSISTANT_CHAT_ID
-        sync: false
+        value: "7748510663"
+      - key: OWNER_USERNAME
+        value: ""
+      - key: STRING_SESSION
+        value: ""
+      - key: GIT_TOKEN
+        value: ""
+      - key: HEROKU_API_KEY
+        value: ""
+      - key: HEROKU_APP_NAME
+        value: ""
+      - key: LOG_GROUP_ID
+        value: "-1002622416300"
+      - key: SUPPORT_GROUP
+        value: "https://t.me/JAWANON_KA_ADDA"
+      - key: SUPPORT_CHANNEL
+        value: "https://t.me/Jawanon_ka_adda"
+      - key: COOKIE_URL
+        value: "Need , IF You Didn't add Cookies file in cookies folder"
