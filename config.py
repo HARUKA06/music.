@@ -7,26 +7,26 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("20071630"))
+API_HASH = getenv("11d0d49035cfa33964c687e4480fef0d")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("8066113893:AAERA_0qdo9Yv-AF--dA-N3qeBU1JVHWup0")
 
 #Get API_KEY from @DeadlineTechOwner or @DeadlineApiBot
 API_BASE_URL = getenv("API_BASE_URL", "https://deadlinetech.site")
-API_KEY = getenv("API_KEY")
+API_KEY = getenv("MRBOQ78399afQWeOpXCF")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb+srv://pusers:nycreation@nycreation.pd4klp1.mongodb.net/?retryWrites=true&w=majority&appName=NYCREATION", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = int(getenv("-1002622416300", None))
 
 # Get this value from @Harry_RoxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 7748510663))
+OWNER_ID = int(getenv("7748510663", 7748510663))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
